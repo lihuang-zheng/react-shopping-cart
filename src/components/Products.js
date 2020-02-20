@@ -8,11 +8,11 @@ import { ProductContext } from "../contexts/ProductContext"
 
 
 const Products = props => {
-	const { product, addItem } = useContext(ProductContext)
+	const { products, addItem } = useContext(ProductContext)
 
 	return (
 		<div className="products-container">
-			{product.products.map(product => (
+			{products.map(product => (
 				<Product
 					key={product.id}
 					product={product}

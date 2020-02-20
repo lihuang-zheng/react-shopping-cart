@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import Item from './ShoppingCartItem';
 
 // import cart context
-import { CartContext } from "../context/CartContext"
+import { CartContext } from "../contexts/CartContext"
 
 const ShoppingCart = props => {
 	const { cart, removeItem } = useContext(CartContext)
